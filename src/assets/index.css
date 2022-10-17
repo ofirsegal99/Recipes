@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.navBarContainer{
+  /* height: 165px; */
+  width: 100%;
+  background: transparent;
+  position: absolute;
+}
+.navRow{
+  width: 100%;
+}
+.navBarUl{
+  display: flex;
+}
+.navBarUlElement{
+  display:inline-flex;
+  gap:clamp(5px,1vw,10px);
+  align-items: center;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.navBarIconTitle{
+  font-size: clamp(0.8rem,3vw,1.5rem);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #B1B2FF;
+}
+.navBarLi{
+  padding:clamp(10px,3vw,19.2px);
+}
+.navBarIconImage{
+  width:clamp(32px,3.5vw,64px);
+}
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: #B1B2FF!important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color: #B1B2FF!important;
+}
