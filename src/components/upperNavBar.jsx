@@ -3,6 +3,10 @@ import RecipesIcon from "../assets/RecipeIcon.png";
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
+import SearchIcon from '@mui/icons-material/Search';
+import IconButton from "@mui/material/IconButton";
+import UserIcon from '../assets/UserIcon.png';
 function upperNavBar(){
     return(
         <div className="navRow">
@@ -13,20 +17,32 @@ function upperNavBar(){
                          <h1 className="navBarIconTitle">Recipes</h1>
                     </Link>
                 </li>
-                <li  className="navBarUlElement navBarLi">
+                <li  className="navBarUlElement navBarLi navBarLiSearch">
                      <Box
                          sx={{
-                             width: 500,
                              maxWidth: '100%',
                              }}
                      >
                          <TextField
                           fullWidth label="Search for recipe"
                           id="fullWidth"
+                          InputProps={{
+                            style: { color: "#B1B2FF", fontSize:16 },
+                            endAdornment: (
+                              <InputAdornment>
+                                <IconButton>
+                                  <SearchIcon />
+                                </IconButton>
+                              </InputAdornment>
+                            )
+                          }}
                          />
                      </Box>                    
                 </li>
-                <li>
+                <li className="navBarUlElement navBarLi">
+                    <Link  className="navBarUlElement" to="/">
+                        <img className="navBarUserIcon" src={UserIcon} alt="userIcon"/>
+                    </Link>
                 </li>
             </ul>
         </div>

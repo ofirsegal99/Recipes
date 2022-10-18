@@ -6,6 +6,8 @@ function navBar(){
     return(
         <div className="navBarContainer">
             <UpperNavBar/>
+            {/* <hr className="navBarHorizontalLine" /> */}
+            <div className="navBarHorizontalLine"></div>
             <LowerNavBar/>
         </div>
     )

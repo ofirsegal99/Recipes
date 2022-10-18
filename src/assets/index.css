@@ -14,10 +14,12 @@
   position: absolute;
 }
 .navRow{
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
 }
 .navBarUl{
   display: flex;
+  justify-content: space-between;
 }
 .navBarUlElement{
   display:inline-flex;
@@ -35,7 +37,10 @@ ul{
   color: #B1B2FF;
 }
 .navBarLi{
-  padding:clamp(10px,3vw,19.2px);
+  padding-right:clamp(10px,3vw,19.2px);
+  padding-left:clamp(10px,3vw,19.2px);
+  padding-top: clamp(10px,3vw,25px);
+  padding-bottom: clamp(10px,3vw,25px);
 }
 .navBarIconImage{
   width:clamp(32px,3.5vw,64px);
@@ -45,4 +50,25 @@ ul{
 }
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
   color: #B1B2FF!important;
+}
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: #B1B2FF!important;
+}
+.navBarUserIcon{
+  width: clamp(32px,3.5vw,42px);
+  transition: .3s;
+}
+.navBarUserIcon:hover{
+  transform: scale(1.35);
+}
+.css-9whsf3 {
+  width: clamp(35vw,50px,50vw)!important;
+  max-width: fit-content;
+}
+.navBarHorizontalLine{
+  width: 95%;
+  margin: 0 auto;
+  /* border-top: 50px dashed #B1B2FF; */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23B1B2FFFF' stroke-width='6' stroke-dasharray='10%2c50' stroke-dashoffset='87' stroke-linecap='round'/%3e%3c/svg%3e");
+  height: 3px;
 }
