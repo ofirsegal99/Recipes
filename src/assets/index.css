@@ -11,7 +11,6 @@
   /* height: 165px; */
   width: 100%;
   background: transparent;
-  position: absolute;
 }
 .navRow{
   width: 98%;
@@ -68,7 +67,118 @@ ul{
 .navBarHorizontalLine{
   width: 95%;
   margin: 0 auto;
-  /* border-top: 50px dashed #B1B2FF; */
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23B1B2FFFF' stroke-width='6' stroke-dasharray='10%2c50' stroke-dashoffset='87' stroke-linecap='round'/%3e%3c/svg%3e");
   height: 3px;
+}
+.navBarMealTypesText{
+  color:#5472b6;
+  font-weight: 800;
+  font-size: clamp(8px,2.5vw,15px);
+}
+.navBarMealTypesLink{
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navBarMealTypesLink:hover{
+  text-decoration: underline;
+}
+.navBarMealTypesDownArrow{
+  width: clamp(30px,5vw,40px);
+  /* transform: rotate(180deg); */
+}
+.navRowForButton{
+  display: flex;
+  justify-content: center;
+}
+.navBarMealTypesButton{
+  cursor: pointer;
+  border-width: 0;
+  /* border-radius: 25px; */
+  border-radius: 50%;
+  padding-right: clamp(10px,3vw,19.2px);
+  padding-left: clamp(10px,3vw,19.2px);
+  padding-top: clamp(10px,3vw,19.2px);
+  padding-bottom: clamp(8px,2vw,15.2px);
+  margin-bottom: clamp(10px,3vw,20px);
+}
+.overallContainer{
+  width: 98%;
+  max-width:1885px;
+  margin: 0 auto;
+}
+.welcomeTitle{
+  color:#AAC4FF;
+  font-weight:800;
+  letter-spacing: 2px;
+  width: 70%;
+  margin-left: 5%;
+  font-size: clamp(16px,4.5vw,60px);
+}
+.welcomeLeftContainer{
+  padding-top:50px;
+}
+.welcomeAllTitles{
+  width: 70%;
+  margin-left: 5%;
+  font-family: 'Quicksand', sans-serif;
+}
+.welcomeSubTitle{
+  padding-top:clamp(0px,0.5vw,20px);
+  color: #B1B2FF;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: clamp(14px,3.5vw,40px);
+}
+.welcomeButton{
+  display: block;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.welcomeLoginButton{
+  margin-top: 100px;
+  letter-spacing: 15px;
+  padding: 20px 60px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border-width: 0;
+  color: white;
+  background-color: #AAC4FF;
+}
+.welcomeSignupButton{
+  margin-bottom: 200px;
+  text-decoration: underline;
+  background-color: white;
+  border-width: 0;
+  color: grey;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+@media (max-width:740px){
+  .welcomeSignupButton{
+    /* max-width: 40%; */
+    font-size: clamp(8px,2vw,13px);
+  }
+  .welcomeLoginButton{
+    font-size:clamp(9px,2vw,17px);
+    letter-spacing:clamp(9px,2vw,14px);
+    margin-top:clamp(20px,12vw,95px);
+    padding-left:clamp(10px,10vw,60px) ;
+    padding-right:clamp(10px,10vw,60px) ;
+  }
+}
+.chooseCuisinesContainer{
+  /* background-image: url(../assets/FoodBackground.jpg); */
+  background-color: #B1B2FF;
+}
+.chooseCuisinesTitle{
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 100px;
+}
+.chooseCuisinesCardAndTitleContainer{
+  display: flex;
+  justify-content: center;
 }
