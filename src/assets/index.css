@@ -176,9 +176,84 @@ ul{
   font-size: 50px;
   font-weight: 800;
   font-family: 'Quicksand', sans-serif;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .chooseCuisinesCardAndTitleContainer{
+ text-align: center;
+}
+.chooseCuisinesCardSliderContainer{
   display: flex;
   justify-content: center;
+  width: 100%;
+  /* height: 500px; */
+  padding: 60px 100px;
 }
+.cardContainer{
+  background-color: white;
+  border: 2px solid #AAC4FF;
+  border-radius: 10px;
+  transition: all .4s ease-out 0s;
+  margin: 0 10px;
+}
+.cardContainer:hover{
+  border: 2px solid transparent;
+  box-shadow: 0 25px 38px rgb(254 95 65 / 10%);
+  -webkit-box-shadow: 0 20px 30px rgb(254 95 65 / 10%);
+}
+.cardCuisineCircle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:#D2DAFF;
+  margin: 0 auto;
+  transition: all .4s ease-out 0s;
+}
+.cardCuisineTitleContainer{
+  padding: 20px 40px;
+  text-align: center;
+}
+.cardCuisineButton{
+  background: transparent;
+  cursor: pointer;
+  border-width: 0;
+}
+.cardCuisineTitle{
+  font-size: 20px;
+  font-weight: 800;
+  /* color: #B1B2FF; */
+  color: #c7d1fe;
+  transition: all .4s ease-out 0s;
+}
+.cardContainer:hover button div h1{
+  color: #B1B2FF;
+}
+.cardContainer:hover button div div{
+  background-color: #B1B2FF;
+}
+.cuisineArrowButton{
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.cuisineLeftArrowButtonImage{
+  transform: rotate(180deg);
+}
+.cuisineArrowButtonImage{
+  width:80px;
+} 
+.chooseCuisinesCardSlider:-webkit-scrollbar {
+  display: none;
+}
+
+.chooseCuisinesCardSlider{
+  display: flex;
+  overflow-x:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  width: 188px;
+}
+.chooseCuisinesCardSlider::-webkit-scrollbar {
+  display: none;
+}
+
