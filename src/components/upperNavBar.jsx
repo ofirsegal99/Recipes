@@ -40,7 +40,7 @@ function upperNavBar(){
                      </Box>                    
                 </li>
                 <li className="navBarUlElement navBarLi">
-                    <Link  className="navBarUlElement" to="/">
+                    <Link  className="navBarUlElement" to="/Login">
                         <img className="navBarUserIcon" src={UserIcon} alt="userIcon"/>
                     </Link>
                 </li>

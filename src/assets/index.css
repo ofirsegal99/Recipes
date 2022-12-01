@@ -268,4 +268,224 @@ ul{
 .chooseCuisinesCardSlider::-webkit-scrollbar {
   display: none;
 }
+.greyBackgroundContainer{
+  background-color: rgb(202, 202, 202);
+  width: 100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bothContainer{
+  width:90%;
+  height: 85%;
+  background-color: rgb(240, 245, 245);
+  box-shadow: 0 20px 40px 0 rgba(104, 104, 104, 0.2), 0 6px 20px 0 rgba(104, 104, 104, 0.2);
+}
+.halfContainer{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  overflow: auto;
+}
+.pictureContainer{
+  background:black;
+}
+.returnLogoDivContainer{
+  width: 98%;
+  margin: auto;
+}
+.returnLogoContainer{
+  padding-right: clamp(10px,3vw,19.2px);
+  padding-left: clamp(10px,3vw,19.2px);
+  padding-top: clamp(10px,3vw,25px);
+  padding-bottom: clamp(10px,3vw,25px);
+}
+.loginCardContainer{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  max-width: 500px;
 
+}
+.loginTitleContainer{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.loginSubTitleContainer{
+  text-align: center;
+}
+.loginTitle{
+  color: #AAC4FF;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-family: 'Ms Madi', cursive;
+}
+.loginSubTitle{
+  color: #B1B2FF;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.loginForm{
+  margin-top: 20px;
+}
+.titleWithInputContainer{
+  margin: 10px 0 10px 0;
+}
+.formTitle{
+  color: #AAC4FF;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.formGap{
+  padding: 6px 0 6px 0;
+}
+.formInput{
+  width: 100%;
+  padding: 10px 20px;
+  background: rgb(240, 245, 245);
+  border-color: rgb(194, 194, 194);
+  border-style: solid;
+  color: #B1B2FF;
+  font-weight: 500;
+}
+.formInput:focus {
+  outline-color: #AAC4FF !important;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: rgb(194, 194, 194);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(194, 194, 194);
+}
+
+::placeholder {
+  color: rgb(194, 194, 194);
+}
+.checkBoxWithForgotPasswordContainer{
+  width: 100%;
+  display: flex;
+}
+.rememberMeCheckBox{
+  width: 16px;
+  height: 16px;
+  /* border-style: solid;
+  border-color:rgb(194, 194, 194);
+  border-width: 2px; */
+  background:rgb(194, 194, 194);
+}
+.checkBoxContainer{
+  display: inline-flex;
+  align-items: center;
+}
+.rememberMeButton{
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+  padding-left:10px;
+}
+.rememberMeButton:hover{
+  text-decoration: underline;
+  text-decoration-color:#AAC4FF;
+}
+.rememberMeText{
+  font-size: 14px;
+  font-weight: 800;
+  color: #AAC4FF;
+}
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -1.5px;
+  left: 0;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 3px;
+  background-color: rgb(240, 245, 245); 
+}
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #AAC4FF;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 6px;
+}
+.forgotPasswordContainer{
+  display: inline-block;
+  margin-left:auto;
+  margin-right:0;
+}
+.loginButton{
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  color: white;
+  background: #AAC4FF;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Ms Madi', cursive;
+  font-size: 26px;
+}
+.loginGoogleButton{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: rgb(240, 245, 245);
+  color: #AAC4FF;
+  border: 2px solid #AAC4FF;
+}
+.googleIcon{
+  width: 28px;
+}
+.googleLogInText{
+  padding-left: 8px;
+  font-weight: 500;
+}
+.signinOrSignupContainer{
+  width: 80%;
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.signinOrSignupFirstSpan{
+  color: rgb(194, 194, 194);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.signinOrSignupButton{
+  margin-left:5px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.signinOrSignupButton:hover{
+  text-decoration: underline;
+  text-decoration-color: #AAC4FF;
+}
+.signinOrSignupSecondSpan{
+  font-family: 'Ms Madi', cursive;
+  color: #AAC4FF;
+  font-size: 28px;
+}
