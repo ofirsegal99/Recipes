@@ -1,4 +1,6 @@
 import React from "react";
+import Food from "../assets/food.png";
+import Food2 from "../assets/food2.png";
 
 function Welcome(){
     return(
@@ -10,6 +12,8 @@ function Welcome(){
                 <button className="welcomeButton welcomeLoginButton">Login</button>
                 <button className="welcomeButton welcomeSignupButton">Dont have an account? Click here to sign up</button>
             </div>
+             <img className="foodImage firstFood" src={Food} alt="food" />
+             <img className="foodImage secondFood" src={Food2} alt="food" />
         </div>
     )
 }

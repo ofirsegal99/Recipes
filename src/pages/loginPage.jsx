@@ -2,6 +2,7 @@ import React from "react";
 import ReturnHomeLogo from "../components/returnHomeLogo";
 import LoginCard from "../components/loginCard";
 import SigninOrSignup from "../components/signinOrSignup";
+import Background from '../assets/FoodBackground.jpg'
 function loginPage(){
     return(
         <>
@@ -13,7 +14,7 @@ function loginPage(){
                     <SigninOrSignup/>
                 </div>
                 <div className="halfContainer pictureContainer">
-
+                    <img className="signinBackgroundImage" src={Background} alt="SignInBackground" />
                 </div>
             </div>
         </div>
