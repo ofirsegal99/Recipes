@@ -4,7 +4,6 @@ import MainPage from './pages/mainPage';
 import SignupPage from './pages/signupPage';
 import LoginPage from "./pages/loginPage";
 import RecipesPage from "./pages/recipesPage";
-
 function App() {
   return (
     <div className="App">
