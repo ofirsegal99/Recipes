@@ -31,34 +31,31 @@ function RecipesPage(){
           // always executed
         });
     },[spoonacularSearchURL])
-            axios.get(spoonacularSearchURL)
-             .then(function (response) {
-               // handle success
-               setcurrentRecipes(response.data.results);
-               console.log(setcurrentRecipes);
-               console.log(currentRecipes)
-             })
-             .catch(function (error) {
-               // handle error
-               console.log(error);
-             })
-             .then(function () {
-               // always executed
-             });
-             console.log(currentRecipes)
+    console.log(spoonacularSearchURL);
+
     return(
         <>
         <NavBar/>
         <div className="resultsAndSearchmenuContainer">
             <div className="resultsContainer">
-                     {currentRecipes.map((curr)=>(
-                         <div key={curr.id} className="recipeCardContainer">
+                     {/* {currentRecipes.map((curr)=>(
+                         <a key={curr.id} href="/" className="recipeCardContainer">
                               <div className="recipeCard">
                                   <img className="recipeCardImage" src={curr.image} alt={curr.title} />
                                   <h1 className="recipeCardTitle">{curr.title}</h1>
-                                  <button className="recipeCardButton">Full recipe</button>
                              </div>
-                         </div>
+                         </a>
+                     ))} */}
+                    {currentRecipes.map((curr)=>(
+                           <article key={curr.id} class="card">
+                               <header class="card__thumb">
+                                   <img src={curr.image} alt={curr.title}/>
+                               </header>
+                               <div class="card__body">
+                                   <h2 class="card__title">{curr.title}</h2>
+                                   <a href="/" class="card__description getRecipeButton">Get recipe</a>
+                               </div>
+                           </article>
                      ))}
             </div>
             <div className="searchmenuContainer">
@@ -70,12 +67,3 @@ function RecipesPage(){
 }
 
 export default RecipesPage;
-            //    (currentRecipes.map((curr)=>(
-            //         (<div key={curr.id} className="recipeCardContainer">
-            //              <div className="recipeCard">
-            //                  <img className="recipeCardImage" src={curr.image} alt={curr.title} />
-            //                  <h1 className="recipeCardTitle">{curr.title}</h1>
-            //                  <button className="recipeCardButton">Full recipe</button>
-            //              </div>
-            //          </div>)
-            //    )));
