@@ -14,9 +14,16 @@ function RecipesPage(){
             searchTargetWithoutSpace= searchTargetWithoutSpace + searchTarget[i];
         }
      }
+     let spoonacularSearchURL;
+    if((searchTargetWithoutSpace.substring(0,10))==="MealTypeIs"){
+      const API_Free_Search_Url = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=2e401702f4ac4ad4b750d8f756aeffef&type=';
+      spoonacularSearchURL = API_Free_Search_Url + searchTargetWithoutSpace.substring(10);
+    }
     // console.log(searchTargetWithoutSpace)
-    const API_Free_Search_Url = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=2e401702f4ac4ad4b750d8f756aeffef&query=';
-    let spoonacularSearchURL = API_Free_Search_Url+searchTargetWithoutSpace;
+    else{
+      const API_Free_Search_Url = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=2e401702f4ac4ad4b750d8f756aeffef&query=';
+      spoonacularSearchURL = API_Free_Search_Url+searchTargetWithoutSpace;
+    }
     useEffect(() => {
         axios.get(spoonacularSearchURL)
         .then(function (response) {
@@ -38,14 +45,6 @@ function RecipesPage(){
         <NavBar/>
         <div className="resultsAndSearchmenuContainer">
             <div className="resultsContainer">
-                     {/* {currentRecipes.map((curr)=>(
-                         <a key={curr.id} href="/" className="recipeCardContainer">
-                              <div className="recipeCard">
-                                  <img className="recipeCardImage" src={curr.image} alt={curr.title} />
-                                  <h1 className="recipeCardTitle">{curr.title}</h1>
-                             </div>
-                         </a>
-                     ))} */}
                     {currentRecipes.map((curr)=>(
                            <article key={curr.id} class="card">
                                <header class="card__thumb">

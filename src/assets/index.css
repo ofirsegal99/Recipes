@@ -266,7 +266,7 @@ ul{
   overflow-x:scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  width: 188px;
+  /* width: 188px; */
 }
 .chooseCuisinesCardSlider::-webkit-scrollbar {
   display: none;
@@ -553,11 +553,6 @@ input[type=checkbox]:checked:after {
   margin: 10px;
   border-radius: 20px;
   transform: 0.3s;
-}
-.recipeCardContainer:hover .recipeCardImage{
-  /* opacity: 0.6;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2); */
 }
 .recipeCard{
   display: block;
