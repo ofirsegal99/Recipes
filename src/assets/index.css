@@ -214,12 +214,13 @@ ul{
   transition: all .4s ease-out 0s;
 }
 .cardCuisineTitleContainer{
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   padding-top:clamp(10px,3.45vw,20px) ;
   padding-bottom:clamp(10px,3.45vw,20px) ;
-  padding-left:clamp(20px,6.9vw,40px) ;
-  padding-right:clamp(20px,6.9vw,40px)  ;
+  /* padding-left:clamp(20px,6.9vw,40px) ;
+  padding-right:clamp(20px,6.9vw,40px)  ; */
   text-align: center;
+  width: clamp(70px,14.5vw,150px);
 }
 .cardCuisineDinnerIcon{
   width: clamp(32px,3.41vw,64px) ;
@@ -236,6 +237,7 @@ ul{
   /* color: #B1B2FF; */
   color: #c7d1fe;
   transition: all .4s ease-out 0s;
+  padding-top: clamp(3px,1vw,10px);
 }
 .cardContainer:hover button div h1{
   color: #B1B2FF;
@@ -267,6 +269,7 @@ ul{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   /* width: 188px; */
+  scroll-behavior: smooth;
 }
 .chooseCuisinesCardSlider::-webkit-scrollbar {
   display: none;

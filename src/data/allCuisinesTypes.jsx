@@ -1,6 +1,6 @@
 const allCuisineTypes =[
     {
-        nameOfCuisine : 'Korean'
+        nameOfCuisine : 'Eastern European'
     },
     {
         nameOfCuisine : 'Jewish'
@@ -30,7 +30,7 @@ const allCuisineTypes =[
         nameOfCuisine : 'European'
     },
     {
-        nameOfCuisine : 'Eastern European'
+        nameOfCuisine : 'Korean'
     },
     {
         nameOfCuisine : 'Chinese'

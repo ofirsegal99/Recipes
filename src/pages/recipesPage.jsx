@@ -1,6 +1,6 @@
 import React, {useState , useEffect} from "react";
 import NavBar from "../components/navBar";
-import axios, * as others from 'axios';
+import axios from 'axios';
 function RecipesPage(){
     let [currentRecipes, setcurrentRecipes] = useState([]);
     let searchTargetWithoutSpace = "";
@@ -18,6 +18,10 @@ function RecipesPage(){
     if((searchTargetWithoutSpace.substring(0,10))==="MealTypeIs"){
       const API_Free_Search_Url = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=2e401702f4ac4ad4b750d8f756aeffef&type=';
       spoonacularSearchURL = API_Free_Search_Url + searchTargetWithoutSpace.substring(10);
+    }
+    else if((searchTargetWithoutSpace.substring(0,13))==="CuisineTypeIs"){
+      const API_Free_Search_Url = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=2e401702f4ac4ad4b750d8f756aeffef&cuisine=';
+      spoonacularSearchURL = API_Free_Search_Url + searchTargetWithoutSpace.substring(13);
     }
     // console.log(searchTargetWithoutSpace)
     else{

@@ -7,7 +7,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from "@mui/material/IconButton";
 import UserIcon from '../assets/UserIcon.png';
-import axios, * as others from 'axios';
+
 
 function upperNavBar(){
     let currentText;

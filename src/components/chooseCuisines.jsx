@@ -38,13 +38,24 @@ function ChooseCuisines(nameOfCuisine){
         GetWindowSize();
       }, []);
     window.onresize = GetWindowSize;
-
+    function Slide(e){
+        const sliderSize = (document.getElementById('chooseCuisinesCardSlider').offsetWidth);
+        console.log(sliderSize);
+        if(e.target.className==="cuisineArrowButtonImage  cuisineLeftArrowButtonImage"){
+            console.log("Left");
+            document.querySelector(".chooseCuisinesCardSlider").scrollLeft -= sliderSize;
+        }
+        else{
+            console.log("Right")
+            document.querySelector(".chooseCuisinesCardSlider").scrollLeft += sliderSize;
+        }
+    }
     return(
         <div className='chooseCuisinesContainer '>
             <div className='overallContainer chooseCuisinesCardAndTitleContainer'>
                 <h1 className='chooseCuisinesTitle'>Pick by cuisine</h1>
                 <div className='chooseCuisinesCardSliderContainer'>
-                    <button className='cuisineArrowButton'>
+                    <button className='cuisineArrowButton' onClick={Slide}>
                         <img className='cuisineArrowButtonImage  cuisineLeftArrowButtonImage' src={CuisineArrow} alt="CuisineArrow" />
                     </button>
                     <div className='chooseCuisinesCardSlider' id='chooseCuisinesCardSlider'>
@@ -52,7 +63,7 @@ function ChooseCuisines(nameOfCuisine){
                         <Card nameOfCuisine={curr} key={i}/>
                     ))}
                     </div>
-                    <button className='cuisineArrowButton'>
+                    <button className='cuisineArrowButton' onClick={Slide}>
                         <img className='cuisineArrowButtonImage' src={CuisineArrow} alt="CuisineArrow" />
                     </button>
                 </div>
